@@ -5,7 +5,7 @@ agents can CRUD land, commercials, areas
 
 
 COMMIITS
-to commit the whole project
+to commit added tiny MCE to everything
 
 ERRORS 
 fix the no method errors that apear in all the links related to the selective showing
@@ -48,6 +48,7 @@ REQUIREMENTS
 GEMS
 acts as tagable
 acts as votable
+
 
 UNCATEGORIZRED
 mailers. especially ones that deal with gmail.

@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem 'activeadmin', github: 'activeadmin'
+#gem 'activeadmin', github: 'activeadmin' #creating a lot of conflicts with devise admin
 gem 'devise'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
+
+gem 'tinymce-rails'
 
 gem 'rails', '4.1.8'
 gem 'sass-rails', '~> 4.0.3'
