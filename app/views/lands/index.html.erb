@@ -1,3 +1,5 @@
+
+
 <h1>Listing lands</h1>
 <%= link_to 'New Land', new_land_path %>
 <table>
@@ -21,7 +23,7 @@
         <td><%= land.price %></td>
         <td><%= land.size %></td>
         <td><%= land.amenities %></td>
-        <td><%= land.description %></td>
+        <td><%= land.description, :class => "tinymce", :rows => 40, :cols => 120 %></td>
         <td><%= land.area %></td>
         <td><%= land.agent.email%></td>
         <td><%= link_to 'Show', land %></td>
