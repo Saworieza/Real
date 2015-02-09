@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav>
+	<%= link_to 'Home', root_path %>
+	<%= link_to 'Areas',  areas_path %>
+	<%= link_to 'Land', lands_path %>
+	<%= link_to 'Commercial', commercials_path %>
+	<%= link_to 'Rental', rentals_path %>
+	<%= link_to 'Agent', agent_home_index_path  %>
+	<%= link_to 'User', user_home_index_path  %>
+</nav>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<%= yield %>
+
+</body>
+</html>

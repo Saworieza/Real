@@ -1,0 +1,40 @@
+<h1>Listing lands</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Price</th>
+      <th>Size</th>
+      <th>Amenities</th>
+      <th>Description</th>
+      <th>Area</th>
+      <th>Agent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lands.each do |land| %>
+      <tr>
+        <td><%= image_tag land.image.url(:thumb) %></td>
+        <td><%= land.price %></td>
+        <td><%= land.size %></td>
+        <td><%= land.amenities %></td>
+        <td><%= land.description %></td>
+        <td><%= land.area %></td>
+        <td><%= land.agent.email%></td>
+        <td><%= link_to 'Show', land %></td>
+        
+        <%# if land.agent == current_agent? %>
+          <td><%= link_to 'Edit', edit_land_path(land) %></td>
+          <td><%= link_to 'Destroy', land, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%# end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Land', new_land_path %>

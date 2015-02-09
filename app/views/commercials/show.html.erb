@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <%= image_tag @commercial.image.url(:large) %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= @commercial.price %>
+</p>
+
+<p>
+  <strong>Bedroom:</strong>
+  <%= @commercial.bedroom %>
+</p>
+
+<p>
+  <strong>Amenities:</strong>
+  <%= @commercial.amenities %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @commercial.description %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @commercial.area %>
+</p>
+
+<%= link_to 'Edit', edit_commercial_path(@commercial) %> |
+<%= link_to 'Back', commercials_path %>

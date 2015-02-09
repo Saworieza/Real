@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+<p>
+	<%= image_tag @area.image.url(:large) %>
+</p>
+<p>
+  <strong>County:</strong>
+  <%= @area.county %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @area.location %>
+</p>
+
+<%= link_to 'Edit', edit_area_path(@area) %> |
+<%= link_to 'Back', areas_path %>

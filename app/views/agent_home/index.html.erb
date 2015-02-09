@@ -1,0 +1,7 @@
+<% if agent_signed_in? %>
+	<%= link_to "Sign Out", destroy_agent_session_path, method: :delete %>
+	<%= link_to "Account", edit_agent_registration_path %>
+<% else %>
+	<%= link_to 'Sign in', new_agent_session_path %>
+	<%= link_to 'Sign Up', new_agent_registration_path %>
+<% end %>

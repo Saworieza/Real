@@ -1,0 +1,8 @@
+<h1>Editing commercial</h1>
+<%= image_tag @commercial.image.url(:medium) %>
+
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @commercial %> |
+<%= link_to 'Back', commercials_path %>

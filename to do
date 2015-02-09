@@ -1,0 +1,60 @@
+to do
+NOW HAPPENING
+create username for agents
+agents can CRUD land, commercials, areas
+
+
+COMMIITS
+to commit the whole project
+
+ERRORS 
+fix the no method errors that apear in all the links related to the selective showing
+also note that the create new does not redirect you to sign in. it just gives a method error.
+
+FIGURE OUTS
+why dont the if agent signed in show edit delete paths work
+find a way to link the areas fields to the main table
+how to have one link leading to agents sign up/in
+how to have one link leading to users sign up/in
+
+AGENTS
+allow agent login and creation but for an agent to be created an admin must approve. 
+this is to curb random agent creation hence control creatioin of bogus agents
+an agent has access to CRUD their own properties but not to other agent properties
+however, UD actions are controlled by the admin. unless he opts out with an option to check out what he wants the agen to do ie checks on CRUD when confirming an agent
+they receive an email notification when someone requests an agent acount but to approve this they have to login to the site and manually approve giving the agent their CRUD powers
+this allows for easy access management and control as every john dick and cheney can create an agen acount but not any of them can have an account
+
+cannot sign in as user while signed in as agent.
+
+DASHBOARDS
+create the agents a dashboard from where they can click on their name and it will take them to a centralized dashboard that allows them to create anything through one button click. typically the registrations path would ideal.
+on an agent signing in they are redirected to this dashboard
+edit their profiles
+chaneg their passwords and do CRUD
+
+
+USERS
+users have access to their accounts which allows them to like anything in the site ie land, commercial or rental
+it also allows them to make purchases, comment, create a property wishlist and watch a property
+by watch i mean they receive notifications if a property is bought etc
+
+GENERAL
+the buy call to action shouldnt be linked to an account. It should lead to a form which once the user fills is automatically sent to an email address and a notification alert is sent to someone - admin maybe
+
+check out tinyMCE content editing
+
+REQUIREMENTS
+GEMS
+acts as tagable
+acts as votable
+
+UNCATEGORIZRED
+mailers. especially ones that deal with gmail.
+notification systems for text + mail
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<h1>Listing commercials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Price</th>
+      <th>Bedroom</th>
+      <th>Amenities</th>
+      <th>Description</th>
+      <th>Area</th>
+      <th>Agent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @commercials.each do |commercial| %>
+      <tr>
+        <td><%= image_tag commercial.image.url(:thumb) %></td>
+        <td><%= commercial.price %></td>
+        <td><%= commercial.bedroom %></td>
+        <td><%= commercial.amenities %></td>
+        <td><%= commercial.description %></td>
+        <td><%= commercial.area %></td>
+        <td><%= commercial.agent.email%></td>
+        <td><%= link_to 'Show', commercial %></td>
+        
+         <%# if commercial.agent == current_agent? %>
+          <td><%= link_to 'Edit', edit_commercial_path(commercial) %></td>
+          <td><%= link_to 'Destroy', commercial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%# end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Commercial', new_commercial_path %>

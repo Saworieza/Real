@@ -1,0 +1,34 @@
+<h1>Listing areas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>County</th>
+      <th>Location</th>
+      <th>Agent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @areas.each do |area| %>
+      <tr>
+        <td><%= image_tag area.image.url(:thumb) %></td>
+        <td><%= area.county %></td>
+        <td><%= area.location %></td>
+        <td><%= area.agent.email%></td>
+        <td><%= link_to 'Show', area %></td>
+        
+        <%# if area.agent == current_agent? %>
+          <td><%= link_to 'Edit', edit_area_path(area) %></td>
+          <td><%= link_to 'Destroy', area, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%# end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Area', new_area_path %>
