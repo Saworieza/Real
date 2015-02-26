@@ -1,5 +1,8 @@
 class LandsController < ApplicationController
   before_action :set_land, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_agent!, except: [:index, :show]
+
+
 
   # GET /lands
   # GET /lands.json

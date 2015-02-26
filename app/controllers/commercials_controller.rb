@@ -1,5 +1,8 @@
 class CommercialsController < ApplicationController
   before_action :set_commercial, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_agent!, except: [:index, :show]
+
+
 
   # GET /commercials
   # GET /commercials.json
