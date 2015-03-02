@@ -1,1 +1,4 @@
-Notes V2
+TO COMMIT
+fixed the tiny mce error in all affected models by removing it
+fixed the agent authenitication required before new, delete and update
+deleted admin stuff to stop confusing my devise, these include assest files, n migration files, initializer files and chaanged the routes to stop pointing at admin

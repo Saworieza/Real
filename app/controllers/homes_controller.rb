@@ -5,6 +5,11 @@ class HomesController < ApplicationController
   # GET /homes.json
   def index
     @homes = Home.all
+     @commercials = Commercial.order('created_at DESC').limit(3) #change the number t
+     @rentals = Rental.order('created_at DESC').limit(3)
+     @areas = Area.order('created_at DESC').limit(3)
+     @lands = Land.order('created_at DESC').limit(3)
+     
   end
 
   # GET /homes/1
